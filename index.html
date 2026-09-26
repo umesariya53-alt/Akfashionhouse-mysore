@@ -1,56 +1,51 @@
 <!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>AK FASHION HOUSE - Mysore</title>
+<html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AK FASHION HOUSE</title>
 <style>
-body{background:#000;color:#fff;margin:0;font-family:sans-serif;text-align:center}
-.gold{color:#d4af37}
-.hero{padding:40px 20px;border:2px solid #d4af37;margin:15px;border-radius:20px}
-h1{color:#d4af37;font-size:36px;letter-spacing:2px;margin:0}
-.btn{background:#d4af37;color:#000;padding:14px 28px;border-radius:30px;text-decoration:none;display:inline-block;font-weight:bold;margin:10px}
-.card{border:1.5px solid #d4af37;border-radius:15px;padding:20px;margin:12px;background:#0a0a0a}
-.grid{display:grid;grid-template-columns:1fr 1fr;gap:5px;padding:10px}
-@media(max-width:600px){.grid{grid-template-columns:1fr 1fr}}
-.small-btn{padding:8px 14px;font-size:13px;border-radius:20px;margin:4px;display:inline-block;text-decoration:none;font-weight:bold}
-.wa{background:#25D366;color:#fff}
-.sms{background:#fff;color:#000}
-</style>
-</head>
-<body>
-
-<div class="hero">
-<h1>AK FASHION HOUSE</h1>
-<p>📍 Mysore, Karnataka | Premium Mens Wear</p>
-<h2 class="gold" style="margin-top:30px">WELCOME TO<br>AK FASHION HOUSE</h2>
-<p style="font-size:18px">Prop. <b class="gold">KHANSAAB</b></p>
-<p>📞 7795935958<br>📍 #1649, Near Sri Talkies Theatre, Kabir Road, Mandi Mohalla, Mysore 570001</p>
-<br>
-<a class="btn" href="#collections">OUR COLLECTIONS</a>
-<a class="btn" href="https://wa.me/917795935958?text=Salam%20Khansaab,%20Mujhe%20AK%20Fashion%20House%20se%20kapde%20chahiye">WhatsApp Order</a>
-</div>
-
-<div id="collections" style="padding:20px">
-<h2 class="gold">OUR COLLECTIONS</h2>
-<p>Tap to Order on WhatsApp or Message</p>
-
+*{margin:0;padding:0;box-sizing:border-box}body{background:#000;color:#fff;font-family:Arial,sans-serif;overflow:hidden}
+.page{width:100%;height:100vh;display:none;justify-content:center;align-items:center;padding:12px}.page.active{display:flex}
+.phone{width:100%;max-width:390px;background:#0a0a0a;border:2px solid #c9a86a;border-radius:24px;padding:20px 16px;text-align:center}
+h1{font-family:serif;color:#d4b06a;font-size:50px;line-height:.85;font-weight:800}
+.welcome{color:#d4b06a;letter-spacing:3px;font-size:11px;margin:18px 0 6px 0;font-weight:700}
+.prop{color:#fff;font-size:16px;margin:6px 0;font-weight:600}.style{color:#c9a86a;font-family:serif;font-style:italic;font-size:14px;margin:8px 0 14px 0}
+.number{color:#fff;font-size:19px;font-weight:800;margin:10px 0}.addr{color:#bbb;font-size:12px;line-height:1.6;margin:10px 0}
+.btn{border:none;width:100%;padding:13px;border-radius:11px;font-weight:800;font-size:13px;display:block;text-decoration:none;margin:7px 0;cursor:pointer}
+.gold{background:linear-gradient(#e8c88a,#c9a86a);color:#000}.black{background:#1a1a1a;color:#d4b06a;border:1px solid #c9a86a}.loc{background:#fff;color:#000}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:10px 0;max-height:62vh;overflow-y:auto}
+.card{background:#1e1e1e;border-radius:10px;padding:5px;border:1px solid #333}.card img{width:100%;height:140px;object-fit:cover;border-radius:7px;background:#fff}
+.card-btns{display:flex;gap:3px;margin-top:5px}.wa{background:#25D366;color:#fff;font-size:8px;padding:7px;border-radius:4px;text-decoration:none;flex:1;text-align:center;font-weight:800}
+.msg{background:#333;color:#fff;font-size:8px;padding:7px;border-radius:4px;text-decoration:none;flex:1;text-align:center;border:1px solid #444}
+.coll-title{color:#d4b06a;font-family:serif;font-size:24px}.sub{color:#aaa;font-size:10px;margin-bottom:6px}
+</style></head><body>
+<div id="page1" class="page active"><div class="phone">
+<h1>AK<br>FASHION<br>HOUSE</h1>
+<div class="welcome">WELCOME TO AK FASHION HOUSE</div>
+<div class="prop">Prop. KHANSAAB</div>
+<div class="style">Style That Defines You</div>
+<div class="number">📞 7795935958</div>
+<div class="addr">#1649, Near Sri Talkies Theatre,<br>Kabir Road, Mandi Mohalla, Mysore - 570001</div>
+<a class="btn loc" href="https://www.google.com/maps/search/?api=1&query=1649+Near+Sri+Talkies+Theatre+Kabir+Road+Mandi+Mohalla+Mysore" target="_blank">📍 OPEN LOCATION</a>
+<a class="btn black" href="tel:+917795935958">📞 CALL NOW</a>
+<a class="btn gold" href="https://api.whatsapp.com/send?phone=917795935958&text=Hello%20AK%20Fashion%20House" target="_blank">💬 WHATSAPP</a>
+<button class="btn gold" onclick="nextPage()" style="margin-top:10px">NEXT → OUR COLLECTION</button>
+</div></div>
+<div id="page2" class="page"><div class="phone">
+<div class="coll-title">OUR COLLECTION</div>
+<div class="sub">Tap WhatsApp: Hello AK Fashion House can i get more details about this?</div>
 <div class="grid">
-
-<div class="card">
-<div>🤵</div>
-<b class="gold">Mens Suits</b><br><br>
-<a class="small-btn wa" href="https://wa.me/917795935958?text=Mujhe%20Mens%20Suits%20chahiye">WhatsApp</a>
-<a class="small-btn sms" href="sms:+917795935958?body=Mujhe%20Mens%20Suits%20chahiye">Message</a>
+<div class="card"><img src="https://akfashionhouse-mysore.vercel.app/1.jpg" onerror="this.src='https://via.placeholder.com/300x400?text=Suit+1'"><div class="card-btns"><a class="wa" href="https://api.whatsapp.com/send?phone=917795935958&text=Hello%20AK%20Fashion%20House%20can%20i%20get%20more%20details%20about%20this%20Suit%201?">WHATSAPP</a><a class="msg" href="sms:+917795935958?body=Hello%20AK%20Fashion%20House%20can%20i%20get%20more%20details%20about%20this?">MESSAGE</a></div></div>
+<div class="card"><img src="2.jpg" onerror="this.src='https://via.placeholder.com/300x400?text=Suit+2'"><div class="card-btns"><a class="wa" href="https://api.whatsapp.com/send?phone=917795935958&text=Hello%20AK%20Fashion%20House%20can%20i%20get%20more%20details%20about%20this%20Suit%202?">WHATSAPP</a><a class="msg" href="sms:+917795935958?body=Hello%20AK%20Fashion%20House%20can%20i%20get%20more%20details%20about%20this?">MESSAGE</a></div></div>
+<div class="card"><img src="3.jpg"><div class="card-btns"><a class="wa" href="https://api.whatsapp.com/send?phone=917795935958&text=Hello%20AK%20Fashion%20House%20can%20i%20get%20more%20details%20about%20this%20Suit%203?">WHATSAPP</a><a class="msg" href="sms:+917795935958?body=Hello%20AK%20Fashion%20House%20can%20i%20get%20more%20details%20about%20this?">MESSAGE</a></div></div>
+<div class="card"><img src="4.jpg"><div class="card-btns"><a class="wa" href="https://api.whatsapp.com/send?phone=917795935958&text=Hello%20AK%20Fashion%20House%20can%20i%20get%20more%20details%20about%20this%20Suit%204?">WHATSAPP</a><a class="msg" href="sms:+917795935958?body=Hello%20AK%20Fashion%20House%20can%20i%20get%20more%20details%20about%20this?">MESSAGE</a></div></div>
+<div class="card"><img src="5.jpg"><div class="card-btns"><a class="wa" href="https://api.whatsapp.com/send?phone=917795935958&text=Hello%20AK%20Fashion%20House%20can%20i%20get%20more%20details%20about%20this%20Suit%205?">WHATSAPP</a><a class="msg" href="sms:+917795935958?body=Hello%20AK%20Fashion%20House%20can%20i%20get%20more%20details%20about%20this?">MESSAGE</a></div></div>
+<div class="card"><img src="6.jpg"><div class="card-btns"><a class="wa" href="https://api.whatsapp.com/send?phone=917795935958&text=Hello%20AK%20Fashion%20House%20can%20i%20get%20more%20details%20about%20this%20Suit%206?">WHATSAPP</a><a class="msg" href="sms:+917795935958?body=Hello%20AK%20Fashion%20House%20can%20i%20get%20more%20details%20about%20this?">MESSAGE</a></div></div>
+<div class="card"><img src="7.jpg"><div class="card-btns"><a class="wa" href="https://api.whatsapp.com/send?phone=917795935958&text=Hello%20AK%20Fashion%20House%20can%20i%20get%20more%20details%20about%20this%20Suit%207?">WHATSAPP</a><a class="msg" href="sms:+917795935958?body=Hello%20AK%20Fashion%20House%20can%20i%20get%20more%20details%20about%20this?">MESSAGE</a></div></div>
+<div class="card"><img src="8.jpg"><div class="card-btns"><a class="wa" href="https://api.whatsapp.com/send?phone=917795935958&text=Hello%20AK%20Fashion%20House%20can%20i%20get%20more%20details%20about%20this%20Suit%208?">WHATSAPP</a><a class="msg" href="sms:+917795935958?body=Hello%20AK%20Fashion%20House%20can%20i%20get%20more%20details%20about%20this?">MESSAGE</a></div></div>
+<div class="card"><img src="9.jpg"><div class="card-btns"><a class="wa" href="https://api.whatsapp.com/send?phone=917795935958&text=Hello%20AK%20Fashion%20House%20can%20i%20get%20more%20details%20about%20this%20Suit%209?">WHATSAPP</a><a class="msg" href="sms:+917795935958?body=Hello%20AK%20Fashion%20House%20can%20i%20get%20more%20details%20about%20this?">MESSAGE</a></div></div>
 </div>
-
-<div class="card">
-<div>👑</div>
-<b class="gold">Sherwanis</b><br><br>
-<a class="small-btn wa" href="https://wa.me/917795935958?text=Mujhe%20Sherwani%20chahiye">WhatsApp</a>
-<a class="small-btn sms" href="sms:+917795935958?body=Mujhe%20Sherwani%20chahiye">Message</a>
-</div>
-
-<div class="card">
-<div>👘</div>
-<b class="gold">Kurta Pajama</b><br><br>
-<a class="small
+<button class="btn black" onclick="prevPage()">← BACK TO HOME</button>
+</div></div>
+<script>
+function nextPage(){document.getElementById('page1').classList.remove('active');document.getElementById('page2').classList.add('active');}
+function prevPage(){document.getElementById('page2').classList.remove('active');document.getElementById('page1').classList.add('active');}
+</script></body></html>
